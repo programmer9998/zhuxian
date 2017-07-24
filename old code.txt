@@ -1,0 +1,78 @@
+      #a3 {
+	  left:-100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+      #a1, #a2 {
+	  height: 100px;
+	  width: 100px;
+	  background-color: lightgreen;
+	  }
+	  #a2 {
+	  position: absolute;
+	  left: 12px;
+	  top: -20px;  
+	  z-index: 2;
+	  	  background-color: transparent;
+
+	  }
+	  
+	  
+<!--    <div>
+	  osijfoslsjfoisjff<br>
+	  ffffffffffffffffffffffffff<br>
+	  fffffffffffffffffffffffffoooooooooooooooooooooooooooooooooooo
+	</div>
+	<div id="a1"><button onclick="alert('haha')">click here</button></div>
+	<div id="a2">sfsfsf</div>	<div id="test">test sfsfsf</div>
+	<div id="a3">sfsfsf</div>	
+	<div id="event">sfsfsf</div>	
+	<button onclick=myMove()>aniamte</button>
+-->
+
+function myMove() {
+  var elem = document.getElementById("event");   
+  var pos = -1300;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos+=5; 
+    {/*  pos++; 
+      elem.style.top = pos + 'px'; */}
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+function myMove2() {
+  var elem = document.getElementById("event");   
+  var pos = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 1500) {
+      clearInterval(id);
+	    document.getElementById("event").style.display = 'none';
+
+    } else {
+      pos+=10; 
+    {/*  pos++; 
+      elem.style.top = pos + 'px'; */}
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+var test5=5;
+var test5='jsofjsoif';
+var aa=5;
+function myFunction() {
+    document.getElementById("demo").innerHTML = test5;
+}
+function func4() {
+    alert("this is second function");
+}
